@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Об'єднані територіальні громади</title>
+    <link rel="shortcut icon" href="data/tdu.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- LEAFLET -->
+    <script src="lib/leaflet/leaflet.js"></script>    
+    <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
+    <!-- Leaflet SideBar -->
+    <script src="lib/sidebar/L.Control.Sidebar.js"></script>
+    <link rel="stylesheet" href="lib/sidebar/L.Control.Sidebar.css" />
+    <!-- Leaflet Search -->
+    <script src="lib/search/leaflet-search.js"></script>
+    <link rel="stylesheet" href="lib/search/leaflet-search.css" />
+    <!-- Style, Data -->
+    <link rel="stylesheet" href="styles/custom.css" />
+    <script src="data/otg_18-03.geojson" ></script>
+    <script src="data/otg_association.geojson" ></script>
+    <!-- AJAX -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+    <!--[if lte IE 8]><link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.ie.css" /><![endif]-->
+    
+    <link rel="stylesheet" href="lib/leaflet/leaflet.groupedlayercontrol.css" />
+    <script src="lib/leaflet/leaflet.groupedlayercontrol.js"></script>    
+</head>
+<body>
+    <div id="map"></div>
+    <div id="sidebar">
+        <h1>Об'єднані територіальні громади</h1>
+
+        <p>5 лютого 2015 року Верховною Радою України був прийнятий <a href="http://zakon5.rada.gov.ua/laws/show/157-19" target="_blank"><span class="link">Закон України «Про добровільне об'єднання територіальних громад»</span></a>. Згідно з цим законом сусідні міські, селищні, сільські ради можуть об'єднатися в одну громаду, яка матиме один спільний орган місцевого самоврядування. Добровільне об'єднання територіальних громад сіл, селищ, міст здійснюється з дотриманням таких умов:</p>
+
+        <ol>
+            <li>у складі об'єднаної територіальної громади не може існувати іншої територіальної громади, яка має свій представницький орган місцевого самоврядування;</li>
+            <li>територія об'єднаної територіальної громади має бути нерозривною, межі об'єднаної територіальної громади визначаються по зовнішніх межах юрисдикції рад територіальних громад, що об'єдналися;</li>
+            <li>об'єднана територіальна громада має бути розташована в межах території Автономної Республіки Крим, однієї області;</li>
+            <li>при прийнятті рішень щодо добровільного об'єднання територіальних громад беруться до уваги історичні, природні, етнічні, культурні та інші чинники, що впливають на соціально-економічний розвиток об'єднаної територіальної громади;</li>
+            <li>якість та доступність публічних послуг, що надаються в об'єднаній територіальній громаді, не можуть бути нижчими, ніж до об'єднання.</li>
+        </ol>
+
+        <div class="lorem">Детальнішу інформацію про проведення реформи можна знайти <a href="http://decentralization.gov.ua/" target="_blank"><span class="link">тут</span></a></div>
+        <br />
+        <div class="lorem">Розроблена карта відображає об'єднані територіальні громади, в яких були проведені вибори, станом на 1 липня 2017 р.</div>
+        <br />
+        <div class="lorem">Колір ОТГ відображає рік проведення перших виборів (<b><span id="year_15">2015</span></b>, <b><span id="year_16">2016</span></b>, <b><span id="year_17">2017</span>)</b>.</div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/get_data.js"></script>
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-102334151-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <a target="_blank" href="http://tdukr.com/uk/"><div class="image"></div></a>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+html, body, #map {
+    height: 100%;
+}
+.info {
+    top: 10px;
+    right: 70px;
+    padding: 6px 8px; 
+    font: 14px/16px Arial, Helvetica, sans-serif; 
+    background: white; background: rgba(255,255,255,0.75); 
+    box-shadow: 0 0 15px rgba(0,0,0,0.2); border-radius: 5px;
+} 
+.info h4 { 
+    margin: 0 0 5px; 
+    color: #777;
+}
+.info h5 {
+    font: 10px/12px Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin: 5px 0 5px; 
+}        
+#sidebar {
+    font: 14px/16px Arial, Helvetica, sans-serif;
+}
+#sidebar p {
+    font: 14px/16px Arial, Helvetica, sans-serif;
+}
+.otg_data {
+    letter-spacing: 0.5px;
+    margin: 0 0 5px 0;
+}
+#line {
+    border-bottom: 1px solid #AAA;
+    padding-bottom: 20px;
+}
+#sidebar h1 {
+    font-size: 24px;
+    line-height: 1;
+    margin: 25px 0 0 0;
+}
+#sidebar li {
+    font-style: italic;
+    color: #333333;
+    font-size: 13px;
+}
+.lorem {
+    color: #444444;
+}
+.link {
+    text-decoration: none;
+    color: black;
+    background-color: none;
+}
+.legend {
+    text-align: left;
+    line-height: 18px; 
+    color: #555; 
+} 
+.legend i { 
+    width: 18px; 
+    height: 18px; 
+    float: left; 
+    margin-right: 8px; 
+    opacity: 0.7; 
+}
+#year_15 {
+    color: #de2d26;
+}
+#year_16 {
+    color: #8856a7;
+}
+#year_17 {
+    color: #2ca25f;
+}
+div.image {
+    position: absolute;
+    content:url(../data/tdu.png);
+    height: 60px;
+    z-index: 1000;
+    top: 15px;
+    right: 12px;
+    opacity: 0.9;
+}
+#sq15 {
+    width: 12px;
+    height: 12px;
+    opacity: 0.8;
+    background-color: #de2d26;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px 3px 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+#sq16 {
+    width: 12px;
+    height: 12px;
+    opacity: 0.8;
+    background-color: #8856a7;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px 3px 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+#sq17 {
+    width: 12px;
+    height: 12px;
+    opacity: 0.8;
+    background-color: #2ca25f;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px 3px 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+#sq17_upd {
+    width: 12px;
+    height: 12px;
+    opacity: 0.8;
+    background-color: #24f27d;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 2px 3px 0;
+    overflow: hidden;
+    cursor: pointer;
+}
